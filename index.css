@@ -62,15 +62,25 @@ div{
 }
 h2{
     color: darkslateblue;
-    margin: .5rem;
     text-decoration: underline 2px darksalmon;
     font-size: 2rem;
+}
+h2, h3{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin: .5rem -.6rem;
+    background-color: inherit;
+    padding: .6rem;
+}
+:is(ul, ol) li{
+    margin-left: 2rem !important;
 }
 h3{
     color: brown;
     text-decoration: dashed underline 2px darkorange;
     font-size: 1.3rem;
-    margin: .2rem 0;
+    padding: 1rem 
 }
 h4{
     font-size: 1.2rem;
@@ -111,6 +121,7 @@ mark{
 ul li{
     font-size: 1.1rem;
 }
+
 .title-img{
     width: 100px;
     min-height: 1rem;
