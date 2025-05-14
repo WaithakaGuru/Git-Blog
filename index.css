@@ -135,4 +135,151 @@ footer ul li{
 footer ul li a{
     text-decoration: none;
     color: white;
+ padding: 0;
+ margin: 0;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ line-height: 1cm;
+ font-size: 1rem;
+}
+body{
+ background-color: rgb(98, 112, 126);
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: max-content;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+}
+header{
+ margin: -.4rem auto 1rem;
+ text-align: center;
+ background-color: rgb(0, 110, 255);
+ width: 100%;
+ border-radius: 0 .4rem 0 .4rem;
+ color: white;
+ display: flex;
+ gap: 4rem;
+ justify-content: space-around;
+ position: relative;
+}
+header h1{
+ padding-left: 1.5rem;
+}
+header ul{
+ display: flex;
+ padding: 18px;
+ border-radius: 10px;
+ justify-content: space-evenly;
+ position: relative;
+ width: 70%;
+}
+.nav-ul{
+ list-style-type: none;
+}
+
+.nav-li a{
+ text-decoration: none;
+ color: rgb(245, 245, 245);
+ margin: 0 .5rem;
+}
+
+.nav-li a:hover {
+ color: rgba(245, 245, 245, .8);
+}
+div{
+ position: relative;
+ width: 75%;
+ margin: 1rem auto;
+ background-color: #e7fafe;
+ padding: .1rem 3rem;
+ border-radius:0 1rem;
+ box-shadow:0 1px  4px rgb(242, 239, 233)
+}
+h2{
+ color: darkslateblue;
+ text-decoration: underline 2px darksalmon;
+ font-size: 2rem;
+}
+h2, h3{
+ position: sticky;
+ top: 0;
+ z-index: 10;
+ margin: .5rem -.6rem;
+ background-color: inherit;
+ padding: .6rem;
+}
+:is(ul, ol) li{
+ margin-left: 2rem !important;
+}
+h3{
+ color: brown;
+ text-decoration: dashed underline 2px darkorange;
+ font-size: 1.3rem;
+ padding: 1rem 
+}
+h4{
+ font-size: 1.2rem;
+ color: rgb(190, 106, 78)
+}
+p{
+ position: relative;
+ max-width: 80%;
+ line-height: 1cm;
+}
+div> p::first-letter{
+ font-size: 2rem;
+ margin-left: 1rem;
+}
+code{
+ background-color: rgb(254, 254, 198);
+ border: 1px solid orange;
+ color: rgb(154, 85, 0);
+ outline: none;
+ border-radius: .5rem;
+ padding: .4rem .5rem;
+ margin: 1rem auto;
+ display: block;
+}
+img{
+ min-width: 60%;
+ max-width: 90%;
+ margin: 1rem;
+ display: block;
+ min-height: 10rem;
+}
+mark{
+ background-color:rgb(179, 158, 76);;
+ border: 1px dotted darkorange;
+ padding: 0 .5rem;
+ font-size: 1.1rem;
+}
+ul li{
+ font-size: 1.1rem;
+}
+
+.title-img{
+ width: 100px;
+ min-height: 1rem;
+}
+footer{
+ margin-top:50px;
+ padding: 20px;
+ background-color: rgb(0, 110, 255);
+ height:200px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ color:white;
+ width: 100%;
+}
+
+footer ul li{
+ list-style-type: none;
+ margin-top:20px;
+}
+
+footer ul li a{
+ text-decoration: none;
+ color: white;
 }
