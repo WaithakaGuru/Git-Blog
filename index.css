@@ -3,7 +3,7 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1cm;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 body{
     background-color: rgb(98, 112, 126);
@@ -81,10 +81,6 @@ p{
     max-width: 80%;
     line-height: 1cm;
 }
-div p::first-line{
-    font-size: 1.4rem;
-    /* font-weight: 500; */
-}
 div> p::first-letter{
     font-size: 2rem;
     margin-left: 1rem;
@@ -100,7 +96,8 @@ code{
     display: block;
 }
 img{
-    width: 60%;
+    min-width: 60%;
+    max-width: 90%;
     margin: 1rem;
     display: block;
     min-height: 10rem;
