@@ -65,7 +65,7 @@ header ul {
   display: flex;
   gap: 24px;
   padding: 0;
-  margin: 16px 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .nav-li a {
@@ -83,7 +83,7 @@ header ul {
 }
 
 /* Section backgrounds */
- body > div/* [id] */ {
+ body > div {
   background: #fff;
   margin: 32px auto;
   max-width: 800px;
@@ -205,8 +205,8 @@ footer p {
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  div[id] {
-    max-width: 95vw;
+  body > div{
+    max-width: 100%;
     padding: 20px 8vw;
   }
   header h1 {
@@ -214,7 +214,6 @@ footer p {
   }
 }
 
-/* Make h2 elements sticky at the top for screens larger than 768px */
 @media (min-width: 48rem) {
   h2 {
     position: sticky;
@@ -246,5 +245,37 @@ ul li {
 .title-img {
   width: 100px;
   min-height: 1rem;
+}
+
+@media (max-width: 500px) {
+  body > div,
+  body > div {
+    width: 98% !important;
+    max-width: 98vw !important;
+    padding:1rem .7rem;
+  }
+  img{
+    min-width: 330px
+  }
+  header{
+    overflow-x: hidden;
+  }
+
+  header ul.nav-ul {
+    display: none;
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 0 12px 12px;
+  }
+  .nav-li {
+    width: 100%;
+  }
+  .nav-li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
 }
 
