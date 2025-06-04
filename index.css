@@ -22,6 +22,29 @@ body {
   position: relative;
 }
 
+.scroll-to-top{
+  background-color: #232946;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5rem;
+  right: 8rem;
+  border: lightcyan solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.scroll-to-top a{
+  text-decoration: none;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
 /* Header styling */
 header {
   background: #232946;
