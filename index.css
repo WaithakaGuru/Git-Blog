@@ -22,7 +22,7 @@ body {
   position: relative;
 }
 
-.scroll-to-top{
+.scroll-to-top {
   background-color: #232946;
   height: 4rem;
   width: 4rem;
@@ -38,7 +38,7 @@ body {
   z-index: 10;
 }
 
-.scroll-to-top a{
+.scroll-to-top a {
   text-decoration: none;
   color: white;
   font-size: 3.5rem;
@@ -106,7 +106,7 @@ header ul {
 }
 
 /* Section backgrounds */
- body > div {
+body > div {
   background: #fff;
   margin: 32px auto;
   max-width: 800px;
@@ -228,7 +228,7 @@ footer p {
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  body > div{
+  body > div {
     max-width: 100%;
     padding: 20px 8vw;
   }
@@ -275,12 +275,12 @@ ul li {
   body > div {
     width: 98% !important;
     max-width: 98vw !important;
-    padding:1rem .7rem;
+    padding: 1rem 0.7rem;
   }
-  img{
-    min-width: 330px
+  img {
+    min-width: 330px;
   }
-  header{
+  header {
     overflow-x: hidden;
   }
 
@@ -301,4 +301,3 @@ ul li {
     padding: 8px 0;
   }
 }
-

@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLOG | Everyday Git</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <b class="scroll-to-top"><a href="#what-is-git" title="Scroll to the top"> &uArr;</a></b>
+    <b class="scroll-to-top"
+      ><a href="#what-is-git" title="Scroll to the top"> &uArr;</a></b
+    >
     <header>
       <h1 id="home">
-        <img src="images/Git-Logo-2Color.png" alt="Git Logo" width="100px" class="title-img"/><u> 
-          Everyday Git</u
-        >
+        <img
+          src="images/Git-Logo-2Color.png"
+          alt="Git Logo"
+          width="100px"
+          class="title-img"
+        /><u> Everyday Git</u>
       </h1>
       <ul class="nav-ul">
         <li class="nav-li"><a href="#what-is-git">What is Git</a></li>
@@ -20,7 +25,7 @@
         <li class="nav-li"><a href="#repositories">Repositories</a></li>
         <li class="nav-li"><a href="#commits">Commits</a></li>
         <li class="nav-li"><a href="#what-next">Further Steps</a></li>
-      </ul> 
+      </ul>
     </header>
     <div id="what-is-git">
       <h2>I. What is Git</h2>
@@ -31,9 +36,8 @@
         <mark>graphics design</mark> you have often met yourself with multiple
         versions of your work saving files like
         <code><b>finalWork.docx</b></code> or
-        <code><b>ISwearThisIsFinal.docx</b></code
-        >
-               
+        <code><b>ISwearThisIsFinal.docx</b></code>
+
         For you and all other persons doing projects as such,
         <strong>Git</strong> is a powerful tool that easens the burden.
       </p>
@@ -56,7 +60,7 @@
         <li>Review and revert to previous versions of your work</li>
         <li>Experiment new feature without breaking the main project</li>
       </ul>
-     
+
       There are other Version Control systems like <b>Perforce</b>,
       <b>Subversion</b> and <b>Mercurial</b> but <strong>Git</strong> is the
       most widely used and has become more popular.
@@ -79,16 +83,15 @@
       <h2>II. Getting Started with Git</h2>
       <p>
         To get started with Git, you need to install it on your local machine.
-       
       </p>
       <h3>1️⃣ Check whether Git is Installed</h3>
       Open your Terminal (Command Prompt on Windows, Terminal on macOS/Linux)
       and type the following command:
       <code><strong>git --version</strong></code>
-     
+
       if Git is installed you'll see an output with a Git Version number like
       this:
-     
+
       <img src="images/gitVersion.png" alt="Git Version" width="450px" />
       if you get an error like
       <code
@@ -128,24 +131,18 @@
       <code
         ><strong><em>brew install git</em></strong></code
       >
-     
 
       Alternatively, installing Xcode Command Line Tools also provides Git: Run:
-     
+
       <code
         ><strong><em>xcode-select --install</em></strong></code
       >
       <h4>For Linux (Debian/Ubuntu-based systems):</h4>
       Run the following in your terminal:
       <code
-        ><strong
-          ><em>
-            sudo apt update
-            sudo apt install git
-          </em></strong
-        ></code
+        ><strong><em> sudo apt update sudo apt install git </em></strong></code
       >
-     
+
       Once Installed, Verify by running
       <code
         ><strong><em>git --version</em></strong></code
@@ -156,33 +153,31 @@
       <p>
         After Installing Git, the next thing you need to do is to tell Git who
         you are. This is used to label each commit/save/update you make to the
-        project with you name and email address. It like signing your work.
-        This step is important as it provides ownership and identity both
-        locally and when uploading/pushing you work to remote platforms like
-        GitHub.
+        project with you name and email address. It like signing your work. This
+        step is important as it provides ownership and identity both locally and
+        when uploading/pushing you work to remote platforms like GitHub.
       </p>
       <h3>1️⃣ Set Your Username</h3>
       Open your terminal/Command prompt and run this command (replace '<b
         >Your Name</b
       >' with your actual name):
       <code><strong>git config --global user.name "Your Name"</strong></code>
-      afterwards run this command to confirm  <code><strong>git config user.name</strong></code>
+      afterwards run this command to confirm
+      <code><strong>git config user.name</strong></code>
       Here is how it looks like:
       <img src="images/gitName.png" alt="git Name" width="450px" />
       <h3>2️⃣ Set Your Email Address</h3>
-      Next, set your email address (replace 'youremail@example.com' with your GitHub email):
-      Run:
       Next, set your email address (replace 'youremail@example.com' with your
-      GitHub email): Run: <br />
+      GitHub email): Run: Next, set your email address (replace
+      'youremail@example.com' with your GitHub email): Run: <br />
       <code
         ><strong
           >git config --global user.email "youremail@example.com</strong
         ></code
       >
-    
+
       afterwards run <code><strong>git config user.email</strong></code>
-      to confirm
-      Here is how it looks like:
+      to confirm Here is how it looks like:
       <img src="images/gitEmail.png" alt="Git Email" width="450px" />
     </div>
     <div id="repositories">
@@ -197,10 +192,8 @@
         A Git repository (or repo for short) is a storage space where Git tracks
         and manages all the changes to your project’s files. Think of it as a
         digital ledger that records the history of your project, allowing you to
-        view, revert, or branch off into different versions at any point.
-
-       
-        Let's see how we can create a Git repository:
+        view, revert, or branch off into different versions at any point. Let's
+        see how we can create a Git repository:
       </p>
       <h3>How to Initialize a Git Repository</h3>
       <h4>
@@ -213,10 +206,10 @@
         folder) then run <code><strong> cd folder-name</strong></code> to
         navigate to your folder
       </p>
-     <br />
+      <br />
       Here is how it looks like:
       <img src="images/gitFolder.png" alt="git Folder pic" width="450px" />
-     
+
       <h4>2️⃣ Initialize Git in the Folder</h4>
       <p>
         After navigating to your project folder, run:
@@ -224,10 +217,8 @@
         ><br />
         This command creates a hidden .git directory that Git uses to track
         changes in this folder. Now, your project is officially a Git
-        repository:)
-        Something like this:
+        repository:) Something like this:
         <img src="images/gitRepo.png" alt="Git Repository" width="450px" />
-       
       </p>
     </div>
     <div>
@@ -252,27 +243,25 @@
       </ul>
       <h3>Adding files to the Staging Area</h3>
       <p>
-        To add files to the staging area, use this command
-        (replace 'file-name' with actual name of your folder)
+        To add files to the staging area, use this command (replace 'file-name'
+        with actual name of your folder)
         <code><strong>git add file-name</strong></code>
       </p>
-     
+
       Here is how it looks like:
       <img src="images/gitAddone.png" alt="git add one file" width="450px" />
-     
+
       To add multiple files to the Staging area:
-     
+
       <code><strong>git add file-1-name file-2-name file-3-name</strong></code
       ><br />
       To add all changes (new, modified, and deleted files) run:
-      <code><strong>git add .</strong></code
-      >
+      <code><strong>git add .</strong></code>
       <img
         src="images/gitAddAll.png"
         alt="git add all directories"
         width="450px"
       />
-     
     </div>
     <div id="commits">
       <h2>VI. Committing Changes</h2>
@@ -285,10 +274,8 @@
       <h3>Writing Good Commit Messages</h3>
       <p>
         Good commit messages are crucial for understanding the history of your
-        project.
-        The commit messages should be a continuation of the statement "This
-        commit is going to".
-        In summary:
+        project. The commit messages should be a continuation of the statement
+        "This commit is going to". In summary:
       </p>
       <ul>
         <li>
@@ -353,16 +340,15 @@
       <p>
         To create a new branch, Run:
         <code><strong>git branch new-branch-name</strong></code
-        >(replace 'new-branch-name' with the actual name of the branch)
-       For example:
+        >(replace 'new-branch-name' with the actual name of the branch) For
+        example:
         <img
           src="images/gitBranch.png"
           alt="git branching"
           width="450px"
         /><br />
-       
-        To create and switch to the new branch:
-        Run:
+
+        To create and switch to the new branch: Run:
         <code><strong>git checkout -b new-branch-name</strong></code>
         or
         <code><strong>git switch -c new-branch-name</strong></code>
@@ -376,7 +362,7 @@
         ><br />
         For Example:
         <img src="images/gitBranchview.png" alt="git branch" width="450px" />
-       
+
         The current active branch is indicated with an asterisk (*)
       </p>
     </div>
@@ -384,9 +370,7 @@
       <h2>X. Switching Active Branches</h2>
       <p>To switch to another branch:</p>
       Run: <code><strong>git switch branch-name</strong></code> (replace
-      'branch-name' with the actual name of the branch)
-      or
-      Run:
+      'branch-name' with the actual name of the branch) or Run:
       <code><strong>git checkout branch-name</strong></code
       ><br />
       Here is how it looks like:
@@ -395,11 +379,11 @@
     <div>
       <h2>XI. Merging a branch</h2>
       <p>
-        To merge changes from one branch into the current branch:
-        Run: <code><strong>git merge branch-name</strong></code> (replace
-        'branch-name' with the actual name of the branch)
-        Ensure you're on the branch you want to merge into (for example, main)
-        before running the merge command.
+        To merge changes from one branch into the current branch: Run:
+        <code><strong>git merge branch-name</strong></code> (replace
+        'branch-name' with the actual name of the branch) Ensure you're on the
+        branch you want to merge into (for example, main) before running the
+        merge command.
       </p>
       <figure>
         <img
@@ -416,11 +400,9 @@
     <div>
       <h2>XII. Deleting a Branch</h2>
       <p>
-        To delete a local branch:
-        Run:
+        To delete a local branch: Run:
         <code><strong>git branch -d branch-name</strong></code>
-        If the branch hasn't been merged and you still want to delete it:
-        Run:
+        If the branch hasn't been merged and you still want to delete it: Run:
         <code><strong>git branch -D branch-name</strong></code>
         Here is how it looks like:
         <img
@@ -428,18 +410,15 @@
           alt="git delete a branch"
           width="450px"
         />
-       
       </p>
     </div>
     <div id="what-next">
       <h2>XIII. Further Steps</h2>
       <p>
-        Well Done!🫡 By now, you’ve gone through the essential Git basics—setting
-        up Git, creating a repository, making commits, working with branches,
-        and more. That’s a solid foundation!
-
-        But Git is a powerful tool with even more to explore. Here are some
-        recommendations:
+        Well Done!🫡 By now, you’ve gone through the essential Git
+        basics—setting up Git, creating a repository, making commits, working
+        with branches, and more. That’s a solid foundation! But Git is a
+        powerful tool with even more to explore. Here are some recommendations:
       </p>
       <ol>
         <li>
@@ -481,9 +460,9 @@
           <h3>Practice on Real Projects</h3>
           <p>
             The best way to solidify your Git knowledge is through practice.
-            Try: Starting a personal project on GitHub
-            Contributing to open-source repositories
-            Pair programming or collaborating with a friend
+            Try: Starting a personal project on GitHub Contributing to
+            open-source repositories Pair programming or collaborating with a
+            friend
           </p>
         </li>
       </ol>
